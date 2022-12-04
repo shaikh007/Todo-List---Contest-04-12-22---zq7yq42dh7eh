@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import Task from "./task";
+import Task from "./Task";
 import "./../styles/App.css";
 
 function App() {
