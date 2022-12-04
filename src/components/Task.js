@@ -31,16 +31,8 @@ export default function Task(props) {
       </button>
       {showEdit ? (
         <div>
-          <input
-            type="texarea"
-            className="editTask"
-            onChange={handleTextChange}
-          ></input>
-          <button
-            className="saveTask"
-            disabled={!editText}
-            onClick={() => saveNewText(task.id)}
-          >
+          <input type="texarea" className="editTask" onChange={handleTextChange} ></input>
+          <button className="saveTask" disabled={!editText}onClick={() => saveNewText(task.id)}>
             Save
           </button>
         </div>

@@ -40,23 +40,13 @@ function App() {
 
   return (
     <div id="main">
-      <input
-        id="task"
-        type="textarea"
-        value={inputValue}
-        onChange={handleChange}
-      ></input>
+      <input id="task" type="textarea" value={inputValue} onChange={handleChange}></input>
       <button id="btn" onClick={handleClick} disabled={!inputValue}>
         Add Task
       </button>
       <ol>
         {tasks.map((task) => (
-          <Task
-            key={task.id}
-            task={task}
-            saveChangedText={saveChangedText}
-            handleDelete={handleDelete}
-          />
+          <Task key={task.id} task={task} saveChangedText={saveChangedText} handleDelete={handleDelete}/>
         ))}
       </ol>
     </div>
